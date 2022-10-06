@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "b51ebfd2-6957-47c5-ba34-da46e85cc203",
+		"name": "WFProcess",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16794521"
+	},
+	"item": [
+		{
+			"name": "content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"{\\\"tieude\\\":\\\"processwf\\\",\\\"mota\\\":\\\"Mota3\\\",\\\"sotien\\\":10}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "process content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/workflowprocess/633db7ba1c555f36c375dbc0/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"workflowprocess",
+						"633db7ba1c555f36c375dbc0",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "step for workflow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/workflowprocess/633db7ba1c555f36c375dbc0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"workflowprocess",
+						"633db7ba1c555f36c375dbc0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

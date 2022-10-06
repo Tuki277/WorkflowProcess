@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  processwf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - "8000:8000"
